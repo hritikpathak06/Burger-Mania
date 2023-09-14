@@ -1,0 +1,90 @@
+@import "colors";
+
+.confirmOrder{
+    background: linear-gradient(145deg, red,orange);
+    height: 60vh;
+    width: 100%;
+
+    >main{
+        height: 100%;
+        max-width:900px;
+        background-color: white;
+        margin: auto;
+        padding: 2rem;
+
+        >h1{
+            font-size: 2.2rem;
+            font-weight: bolder;
+            color: $dark;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        >form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            >div{
+                background-color: rgb(233,233,233);
+                width: 70%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1rem;
+                margin: 1rem;
+
+                >label{
+                    white-space: nowrap;
+                   }
+    
+                   >input{
+                    cursor: pointer;
+                   }
+               }
+
+              
+
+               >button{
+                background-color: $red;
+                padding: 0.5rem 1rem;
+                margin: 2rem 0;
+                color: white;
+                border: none;
+                outline: none;
+                font-size: 1rem;
+                border-radius: 10px;
+                cursor: pointer;
+    
+                &:hover{
+                    background-color: $reddark;
+                }
+            }
+        }  
+    }
+}
+
+@media screen and (max-width:600px){
+ .confirmOrder{
+    >main{
+        width: 100%;
+
+        >form{
+            width: 100%;
+            margin-top: 5rem;
+
+            >div{
+                width: 100%;
+            }
+    
+            >input{
+                width: 100%
+            };
+    
+            >button{
+                width: 100%;
+            }
+        }
+    }
+   
+ }
+}

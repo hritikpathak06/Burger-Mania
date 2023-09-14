@@ -1,0 +1,115 @@
+@import "colors";
+
+.about{
+    width: 100%;
+    background:$pink;
+    height: 100vh;
+    overflow: scroll;
+
+    >main{
+        background-color: white;
+        max-width: 900px;
+        margin: auto;
+        height: 100%;
+
+        >h1{
+            font-weight: 500;
+            font-size: 3rem;
+            font-family: fantasy;
+            text-transform: uppercase;
+            color: $red;
+            background-color: $dark;
+            padding: 1rem 2rem;
+        }
+
+        >article{
+            margin: 2rem 0;
+
+            >h4{
+                font: 200 2rem;
+                text-transform: uppercase;
+                font-size: 2rem;
+                text-align: center;
+                padding: 2rem 0;
+            }
+
+            >p{
+                letter-spacing: 2px;
+                word-spacing: 3px;
+                padding: 2rem;
+                width: 50%;
+                text-align: center;
+                margin: auto;
+            }
+
+            >a{
+                background-color: $dark;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 2.5rem;
+                height: 2.5rem;
+                color: white;
+                margin: auto;
+                font-size: 1.5rem;
+            }
+        }
+
+        >div{
+            background-color: $dark;
+            padding: 2rem;
+            color: white;
+
+            >h2{
+                font-size: 1.4rem;
+                font-weight: bolder;
+                padding: 2rem;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            >article{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                >div{
+                    margin:2rem ;
+                     >img{
+                        height: 150px;
+                        width: 150px;
+                        border-radius: 100%;
+                        box-shadow: 10px 10px 10px rgba(255,255,255,0.2);
+                     }
+
+                     >h3{
+                        margin: 1rem;
+                     }
+                }
+
+                >p{
+                    margin: 0 1rem;
+                    width: 50%;
+                    letter-spacing: 2px;
+                    line-height: 150%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px){
+    .about{
+        >main{
+            >article{
+
+            }
+            >div{
+                >article{
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}

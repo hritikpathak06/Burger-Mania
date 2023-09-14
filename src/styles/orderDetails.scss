@@ -1,0 +1,66 @@
+@import "colors";
+
+.orderDetails{
+    background: linear-gradient(160deg,white,red);
+    height: 100vh;
+    width: 100%;
+
+    >main{
+        height: 100%;
+        max-width: 900px;
+        margin: auto;
+        padding: 2rem;
+        background-color: white;
+        overflow-x: auto;
+
+        >h1{
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 2.2rem;
+            color: $dark;
+            margin: 3rem;
+        }
+
+        >div{
+            margin: 2rem 0;
+        text-align: center;
+
+        >h1{
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+        >p{
+            // font-weight: 200;
+            white-space: nowrap;
+            letter-spacing: 2px;
+            margin: 2rem;
+
+            >b{
+                margin-right: 5px;
+                font-weight: bolder;
+                color:$dark;
+            }
+        }
+        }
+
+        >article{
+            >h1{
+                font-size: 1.8rem;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                margin: 2rem 0;
+            }
+
+            >div{
+                background-color: rbga(245,245,245);
+                margin: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+
+  
+}
